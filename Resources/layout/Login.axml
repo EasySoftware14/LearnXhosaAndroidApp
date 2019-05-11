@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@android:color/background_light"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="100"
+    android:minWidth="25px"
+    android:minHeight="25px">
+
+    <TextView
+        android:id="@+id/txtCreateAccount"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:text="Learn Xhosa in Few Minutes"
+        android:textStyle="bold"        
+        android:textColor="#368DEB"
+        android:gravity="center" />
+
+    <EditText
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:padding="5dp"
+        android:hint="Email"
+        android:background="@android:color/white"
+        android:id="@+id/txtEmail" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#f7f7f7" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:padding="5dp"
+        android:background="@android:color/white"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:id="@+id/txtPassword" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:layout_below="@id/txtPassword"
+        android:layout_marginTop="10dp"
+        android:background="#307FC1"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        android:id="@+id/btnSignIn" />
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:layout_marginTop="10dp"
+        android:background="#307FC1"
+        android:text="Sign Up"
+        android:textColor="@android:color/white"
+        android:id="@+id/btnSignUp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="forgot password ?"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:textAlignment="center"/>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar" />
+
+
+</LinearLayout>
+
